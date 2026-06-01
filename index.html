@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Good luck on your exams!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <div class="page">
+
+    <header class="hero">
+      <h1 class="hero-title">Good luck on your exams!</h1>
+      <p class="hero-quote">"Break a pen."</p>
+    </header>
+
+    <section class="beaker-section">
+      <p class="beaker-hint">Click the beaker</p>
+
+      <div class="beaker-wrap" id="beakerWrap">
+        <svg class="beaker-svg" id="beakerSvg" viewBox="0 0 160 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="liquidClip">
+              <rect id="clipRect" x="28" y="60" width="104" height="130" rx="0" />
+            </clipPath>
+          </defs>
+
+          <rect class="liquid-fill" id="liquidFill" x="28" y="110" width="104" height="80" clip-path="url(#liquidClip)" rx="4" />
+
+          <circle class="bubble" cx="55" cy="155" r="5" />
+          <circle class="bubble" cx="80" cy="170" r="4" />
+          <circle class="bubble" cx="100" cy="148" r="6" />
+          <circle class="bubble" cx="68" cy="138" r="3" />
+          <circle class="bubble" cx="112" cy="165" r="5" />
+
+          <path class="beaker-body" d="M40 20 L40 130 Q28 145 22 170 L138 170 Q132 145 120 130 L120 20 Z" />
+          <rect class="beaker-rim" x="32" y="14" width="96" height="12" rx="4" />
+
+          <path class="pour-stream" id="pourStream" d="M138 160 Q180 180 200 240" />
+        </svg>
+      </div>
+
+      <div class="message-card" id="messageCard">
+        <div class="message-icon">&#128170;</div>
+        <p class="message-text">Keep pushing — you're almost at the finish line!</p>
+        <p class="message-sub">Every question you answer brings you one step closer. You've done the hard work. Now show what you know.</p>
+        <button class="reset-btn" id="resetBtn">Pour again</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>You've got this. One exam at a time.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
